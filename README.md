@@ -6,7 +6,10 @@
 
 ## 对canvg进行了微调
 
-在使用canvg对marker进行绘制箭头时，发现，marker中的`refX`与`refY`属性失效。所以对它进行了修复。（目前2015-10-09 canvg是有这个问题，以后版本应该会被修复）
+在[drawFlowChart](https://github.com/leeenx/drawFlowChart)项目中，已经修复了`canvg`绘制marker中的`refX`与`refY`属性失效的bug。
+但是在绘制`sequence`时，又发现了另一个问题，就是带`stroke-dasharray="0"`的path无法绘制。对其进行了修复。
+
+在使用canvg对marker进行绘制箭头时，发现，marker中的`refX`与`refY`属性失效。所以对它进行了修复。（目前2015-10-09 canvg是有这个问题，以后版本应该会被修复）。
 
 ## How to use
 
